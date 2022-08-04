@@ -1,6 +1,24 @@
 module.exports = (sequelize, Sequelize) => {
-  const Tutorial = sequelize.define("tutorial", {
-    title: {
+  const Players = sequelize.define("players", {
+    lastName: {
+      type: Sequelize.STRING,
+    },
+    firstName: {
+      type: Sequelize.STRING,
+    },
+    age: {
+      type: Sequelize.INT,
+    },
+    wins: {
+      type: Sequelize.INT,
+    },
+    losses: {
+      type: Sequelize.INT,
+    },
+    pointsScored: {
+      type: Sequelize.INT,
+    },
+    club: {
       type: Sequelize.STRING,
     },
     description: {
@@ -10,5 +28,5 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.BOOLEAN,
     },
   });
-  return Tutorial;
+  return Players;
 };
