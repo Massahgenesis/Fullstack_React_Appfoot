@@ -1,5 +1,5 @@
 const db = require("../models");
-const Players = db.tutorials;
+const Players = db.Players;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new player

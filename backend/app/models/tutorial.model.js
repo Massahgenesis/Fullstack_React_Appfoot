@@ -7,16 +7,16 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
     },
     age: {
-      type: Sequelize.INT,
+      type: Sequelize.INTEGER,
     },
     wins: {
-      type: Sequelize.INT,
+      type: Sequelize.INTEGER,
     },
     losses: {
-      type: Sequelize.INT,
+      type: Sequelize.INTEGER,
     },
     pointsScored: {
-      type: Sequelize.INT,
+      type: Sequelize.INTEGER,
     },
     club: {
       type: Sequelize.STRING,
