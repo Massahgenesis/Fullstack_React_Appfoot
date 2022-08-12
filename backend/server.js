@@ -23,7 +23,7 @@ db.sequelize
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to my express server for FTF brief project." });
 });
-require("./app/routes/Players.routes")(app);
+require("./app/routes/tutorial.routes.js")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

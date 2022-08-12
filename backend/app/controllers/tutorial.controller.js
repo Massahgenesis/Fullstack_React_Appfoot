@@ -1,5 +1,5 @@
 const db = require("../models");
-const Players = db.Players;
+const Players = db.players;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new player
@@ -13,7 +13,7 @@ exports.create = (req, res) => {
   }
 
   // Create a Player
-  const Players = {
+  const players = {
     lastName: req.body.lastName,
     firstName:req.body.firstName,
     age:req.body.age,
@@ -24,9 +24,15 @@ exports.create = (req, res) => {
     description: req.body.description,
     published: req.body.published ? req.body.published : false,
   };
+  // const players = {
+  //   title: req.body.title,
+  //   description: req.body.description,
+  //   published: req.body.published ? req.body.published : false,
+  // };
+
 
   // Save players in the database
-  Players.create(Players)
+  Players.create(players)
     .then((data) => {
       res.send(data);
     })

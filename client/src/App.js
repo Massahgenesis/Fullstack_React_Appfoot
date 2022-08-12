@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-          <div class="container">
+          <div className="container">
             <a href="/Players" className="navbar-brand">
               FTF
             </a>
