@@ -1,9 +1,9 @@
 //database credentials
 module.exports = {
-  HOST: "localhost",
-  USER: "root",
-  PASSWORD: "",
-  DB: "testdb",
+  HOST: "mysql-gen22sis.alwaysdata.net",
+  USER: "gen22sis",
+  PASSWORD: "datm@Eg_22",
+  DB: "gen22sis_testdb",
   dialect: "mysql",
   pool: {
     max: 5,

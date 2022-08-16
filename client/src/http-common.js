@@ -1,6 +1,6 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://shielded-fortress-97928.herokuapp.com/api",
   headers: {
     "Content-type": "application/json",
   },
